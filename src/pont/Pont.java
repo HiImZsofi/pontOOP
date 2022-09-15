@@ -21,6 +21,21 @@ public class Pont {
     public double getOrigoDistance(){
         return Math.sqrt(Math.pow(this.x,2) + Math.pow(this.y, 2));
     }
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public double length(Pont pont){
+        return Math.sqrt(Math.pow((this.getX() - pont.getX()), 2) + Math.pow((this.getY() - pont.getY()), 2));
+    }
+
+    /*public double getTwoDistance(){
+        return
+    }*/
 
     public Pont(int x, int y){
         this.x = x;

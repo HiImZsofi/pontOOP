@@ -17,6 +17,7 @@ public class Main {
             System.out.println(p);
         }
 
+
         int furthestIndex = 0;
         for (int i = 0; i < pontok.length; i++) {
 
@@ -26,5 +27,7 @@ public class Main {
 
         }
         System.out.println(pontok[furthestIndex].getOrigoDistance());
+
+        System.out.printf("Az egyik pont: %s a másik pont: %s a kettő távolsága: %.3f", p3, p4, p3.length(p4));
     }
 }
