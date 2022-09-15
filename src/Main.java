@@ -1,6 +1,10 @@
 import pont.Kor;
 import pont.Pont;
 
+import java.util.Scanner;
+
+import static java.lang.System.in;
+
 public class Main {
     public static void main(String[] args) {
         /*Pont p1 = new Pont();
@@ -39,7 +43,14 @@ public class Main {
 
         System.out.println(k3);
 
-        System.out.printf("Ennek a körnek a kerülete: %f ", k3.kerulet());
+        System.out.printf("Ennek a körnek a kerülete: %f \n", k3.kerulet());
 
+        System.out.printf("Ennek a körnek a területe: %f \n", k3.terulet());
+
+        Scanner sc = new Scanner(in);
+        System.out.println("Adjon meg egy számot:");
+        int szam = Integer.parseInt(sc.nextLine());
+        k3.setSugar(szam);
+        System.out.printf("Az új kör mérete: %d", szam);
     }
 }

@@ -46,6 +46,11 @@ public class Kor {
         return kerulet;
    }
 
+   public double terulet(){
+        var terulet = Math.sqrt(sugar) * Math.PI;
+        return terulet;
+   }
+
     public String toString() {
         return String.format("(%f, %d, %d)",this.sugar, this.x, this.y);
     }
