@@ -55,6 +55,12 @@ public class Main {
 
         System.out.printf("A kör adatai: %s", k3.toString());
 
-
+        Kor[] korok = new Kor[10];
+        for (int i = 0; i < korok.length; i++) {
+            korok[i] = new Kor((Math.random()*100)+ 1);
+        }
+        for (Kor p: korok){
+            System.out.println(p);
+        }
     }
 }
