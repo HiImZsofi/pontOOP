@@ -39,5 +39,7 @@ public class Main {
 
         System.out.println(k3);
 
+        System.out.printf("Ennek a körnek a kerülete: %f ", k3.kerulet());
+
     }
 }
