@@ -28,6 +28,8 @@ public class Main {
         }
         System.out.println(pontok[furthestIndex].getOrigoDistance());
 
-        System.out.printf("Az egyik pont: %s a másik pont: %s a kettő távolsága: %.3f", p3, p4, p3.length(p4));
+        System.out.printf("Az egyik pont: %s a másik pont: %s a kettő távolsága: %.3f \n", p3, p4, p3.length(p4));
+
+        System.out.printf("Ez a pont a " + p4.siknegyed() + " síknegyedben van");
     }
 }

@@ -33,13 +33,27 @@ public class Pont {
         return Math.sqrt(Math.pow((this.getX() - pont.getX()), 2) + Math.pow((this.getY() - pont.getY()), 2));
     }
 
-    /*public double getTwoDistance(){
-        return
-    }*/
 
     public Pont(int x, int y){
         this.x = x;
         this.y = y;
+    }
+
+    public String siknegyed(){
+        if (this.x > 0 && this.y > 0){
+            return "jobb felső";
+        }
+        else if (this.x > 0 && this.y < 0){
+            return "jobb alsó";
+        }
+        else if (this.x < 0 && this.y < 0){
+            return "bal alsó";
+        }
+        else if (this.x < 0 && this.y > 0){
+            return "bal felső";
+        }
+
+        return " ";
     }
 
     @Override
