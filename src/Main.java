@@ -16,5 +16,15 @@ public class Main {
         for (Pont p: pontok){
             System.out.println(p);
         }
+
+        int furthestIndex = 0;
+        for (int i = 0; i < pontok.length; i++) {
+
+            if(pontok[furthestIndex] . getOrigoDistance() < pontok[i].getOrigoDistance()){
+                furthestIndex = i;
+            }
+
+        }
+        System.out.println(pontok[furthestIndex].getOrigoDistance());
     }
 }
