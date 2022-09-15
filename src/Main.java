@@ -55,6 +55,7 @@ public class Main {
 
         System.out.printf("A kör adatai: %s", k3.toString());
 
+        double legnagyobb = 0;
         Kor[] korok = new Kor[10];
         for (int i = 0; i < korok.length; i++) {
             korok[i] = new Kor((Math.random()*100)+ 1);
@@ -62,5 +63,14 @@ public class Main {
         for (Kor p: korok){
             System.out.println(p);
         }
+
+        for (int i = 0; i < korok.length; i++) {
+            if (korok[i].terulet() > legnagyobb){
+                legnagyobb = korok[i].terulet();
+            }
+        }
+
+        System.out.printf("A legnagyobb terület: %f ", legnagyobb );
+
     }
 }
