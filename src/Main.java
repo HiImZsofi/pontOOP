@@ -52,5 +52,9 @@ public class Main {
         int szam = Integer.parseInt(sc.nextLine());
         k3.setSugar(szam);
         System.out.printf("Az új kör mérete: %d", szam);
+
+        System.out.printf("A kör adatai: %s", k3.toString());
+
+
     }
 }
