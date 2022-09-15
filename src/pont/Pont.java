@@ -9,6 +9,8 @@ public class Pont {
         y = 0;
     }
 
+
+
     public Pont(int n){
         this.x = generateCoordinate(n);
         this.y = generateCoordinate(n);
